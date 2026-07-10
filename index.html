@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
 
         header {
@@ -75,16 +76,37 @@
                 /* border: 2px solid black; */
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
+                padding: 80px 10%;
+                min-height: 80vh;
+                /* background-color: yellow; */
                
+       }
+       .hero-left{
+        border: 2px solid yellow;
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        /* justify-self: ; */
        }
        main{
          background-color: rgb(14, 244, 14);
+         font-family: sans-serif;
+       }
+       footer{
+         background-color: rgb(14, 244, 14);
        }
         .hero-right img{
-            width: 100%;
-            height: 155px;
+            /* width: 100%; */
+            width: auto;
+            height: 255px;
             display: block;
-            max-width: 260px;
+            max-width: 350px;
         }
 
         @media (max-width: 768px) {
@@ -140,18 +162,18 @@
     
         <section class="hero">
             <div class="hero-left">
-                <h3>hELLO, I'm</h3>
-                <h1>
+                <h2 class="hero-content">hELLO, I'm</h2>
+                <h1 class="greeting">
                     Shobhit Rai
                 </h1>
-                <h2>
+                <h3 class="role">
                     IT Undergraduate
-                </h2>
-                <p>
+                </h3>
+                <p class="description">
                     Competitive Programmer | Aspiring Software Engineer | Novice Writer | 
                 </p>
 
-                <button>
+                <button class="Resume-btn">
                     Download Resume
                 </button>                
             </div>
