@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
+
         }
 
         header {
@@ -71,45 +71,126 @@
         .right ul li:hover {
             color: #ff9900;
         }
-         .hero{
-                /* justify-content: border box; */
-                /* border: 2px solid black; */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 80px 10%;
-                min-height: 80vh;
-                /* background-color: yellow; */
-               
-       }
-       .hero-left{
-        border: 2px solid yellow;
-        border-radius: 50%;
-        height: 350px;
-        width: 350px;
-        background-color: yellow;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 40px;
-        /* justify-self: ; */
-       }
-       main{
-         background-color: rgb(14, 244, 14);
-         font-family: sans-serif;
-       }
-       footer{
-         background-color: rgb(14, 244, 14);
-       }
-        .hero-right img{
-            /* width: 100%; */
-            width: auto;
-            height: 255px;
-            display: block;
-            max-width: 350px;
+
+        .hero {
+            /* justify-content: border box; */
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 10%;
+            min-height: 80vh;
+            /* background-color: yellow; */
+
         }
 
+        .hero-left {
+            /* border: 2px solid yellow;
+            border-radius: 50%;
+            height: 350px;
+            width: 350px;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px; */
+            max-width: 50%;
+            /* justify-self: ; */
+        }
+
+        main {
+            background-color: #1f1e1e;
+            font-family: sans-serif;
+            /* color: #ffffff; */
+        }
+
+        .greeting {
+            font-size: 1.2rem;
+            color: #ff9900;
+            /* Accent color */
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .name {
+            font-size: 4rem;
+            /* Make your name huge! */
+            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
+        .role {
+            font-size: 2rem;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #f8cbcb;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+
+        footer {
+            background-color: rgb(14, 244, 14);
+        }
+
+        .hero-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-right img {
+            /* width: 100%; */
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2p solid #333;
+            box-shadow: 0 0 25px rgb(249, 0, 0);
+            /* display: block; */
+            /* max-width: 350px; */
+        }
+
+        .Resume-btn {
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #121212;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .Resume-btn:hover {
+            background-color: #e68a00;
+            transform: translateY(-3px);
+
+        }
+
+
         @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 40px 5%;
+                gap: 40px;
+            }
+
+            .hero-left {
+                max-width: 100%;
+            }
+
+            .name {
+                font-size: 2.8rem;
+            }
+
             nav {
                 /* flex-direction: column;  */
                 gap: 15px;
@@ -129,7 +210,7 @@
                 font-size: 14px;
             }
 
-           
+
         }
     </style>
 </head>
@@ -159,7 +240,7 @@
     </header>
 
     <main>
-    
+
         <section class="hero">
             <div class="hero-left">
                 <h2 class="hero-content">hELLO, I'm</h2>
@@ -170,12 +251,12 @@
                     IT Undergraduate
                 </h3>
                 <p class="description">
-                    Competitive Programmer | Aspiring Software Engineer | Novice Writer | 
+                    Competitive Programmer | Aspiring Software Engineer | Novice Writer |
                 </p>
 
                 <button class="Resume-btn">
                     Download Resume
-                </button>                
+                </button>
             </div>
 
             <div class="hero-right">
