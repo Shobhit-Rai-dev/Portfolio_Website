@@ -201,7 +201,62 @@
             margin-bottom: 16px;
         }
 
+        .skills-section {
+            padding: 0px 10%;
+        }
 
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            border-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.851);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-8px);
+        }
+
+        .skill-category h3 {
+            font-size: 1.5rem;
+            color: #ff8902;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff9900;
+            display: inline-block;
+        }
+
+        .skill-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .badge{
+            border-color: rgba(255, 153, 0, 0.05);
+            color: #ff9900;
+            border: 1px solid #ff9900;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            /* cursor: default; */
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover{
+            background-color: #ff9900;
+            transform: translateY(-8px);
+            color: #121212;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+        }
 
         @media (max-width: 768px) {
             .hero {
@@ -238,7 +293,7 @@
                 font-size: 14px;
             }
 
-            .about-container{
+            .about-container {
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
@@ -315,6 +370,51 @@
                 </div>
                 <div class="visual-imp">
 
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">
+                My Skills
+            </h2>
+            <div class="skills-container">
+                <!-- language -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-badges">
+                        <span class="badge">C</span>
+                        <span class="badge">C++</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Python</span>
+                    </div>
+                </div>
+                <!-- concepts -->
+                <div class="skill-category">
+                    <h3>Core Concepts</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Data Structure</span>
+                        <span class="badge">Algorithms</span>
+                        <span class="badge">Competetive Programming</span>
+                        <span class="badge">Frontend</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-badges">
+                        <span class="badge">VS Code</span>
+                        <a href="https://github.com/Shobhit-Rai-dev" target="_blank" class="badge">GitHub</a>
+                        <a href="https://codeforces.com/profile/Shobhit1357" target="_blank"
+                            class="badge">Codeforces</a>
+                        <a href="https://leetcode.com/u/Rait25/" target="_blank" class="badge">Leetcode</a>
+                        <a href="https://www.codechef.com/users/band_wolves_55" target="_blank"
+                            class="badge">Codechef</a>
+
+                    </div>
                 </div>
             </div>
         </section>
