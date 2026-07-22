@@ -238,7 +238,7 @@
             gap: 15px;
         }
 
-        .badge{
+        .badge {
             border-color: rgba(255, 153, 0, 0.05);
             color: #ff9900;
             border: 1px solid #ff9900;
@@ -251,11 +251,61 @@
             transition: all 0.3s ease;
         }
 
-        .badge:hover{
+        .badge:hover {
             background-color: #ff9900;
             transform: translateY(-8px);
             color: #121212;
             box-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+        }
+
+        .education-section {
+            padding: 40px 10%;
+            border-color: #ff9900;
+        }
+
+        .education-container {
+            max-width: 800px;
+            margin: 0 auto;
+            /* gap: 30px; */
+        }
+
+        .edu:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px rgba(100, 61, 2, 0.4);
+        }
+
+        .edu {
+            display: flex;
+            gap: 30px;
+            background-color: #403939;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #ff9900;
+            margin: 30PX;
+        }
+
+        .edu-date {
+            color: #ff9900;
+            font-weight: bold;
+            min-width: 120px;
+            font-size: 1.1rem;
+        }
+
+        .edu-details h3 {
+            color: #050101;
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .degree {
+            color: #cccccc;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .edu-desc {
+            color: #999999;
+            line-height: 1.6;
         }
 
         @media (max-width: 768px) {
@@ -296,6 +346,11 @@
             .about-container {
                 grid-template-columns: 1fr;
                 gap: 30px;
+            }
+
+            .edu-card {
+                flex-direction: column;
+                gap: 15px;
             }
         }
     </style>
@@ -413,7 +468,39 @@
                         <a href="https://leetcode.com/u/Rait25/" target="_blank" class="badge">Leetcode</a>
                         <a href="https://www.codechef.com/users/band_wolves_55" target="_blank"
                             class="badge">Codechef</a>
+                        <a href="https://www.linkedin.com/in/shobhit-rai-55839830b/" target="_blank"
+                            class="badge">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="education" class="education-section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container">
+                <div class="edu">
+                    <div class="edu-details">
+                        <div class="edu-date">2010-2020</div>
+                        <h3>St. Joseph's Convent School</h3>
+                        <p class="degree"></p>
+                        <p class="edu-desc">Completed my primary and middle school education in this institution</p>
+                    </div>
+                </div>
+                <div class="edu">
+                    <div class="edu-details">
+                        <div class="edu-date">2020-2024</div>
+                        <h3>Sant Atulanand Convent School</h3>
+                        <p class="degree"></p>
+                        <p class="edu-desc">Completed my high school in this institution</p>
+                    </div>
+                </div>
+                <div class="edu">
+                    <div class="edu-details">
+                        <div class="edu-date">2025 - Present</div>
+                        <h3>Indian Institute of Information Technology (IIIT), Vadodara</h3>
+                        <p class="degree">B.Tech in Information Technology</p>
+                        <p class="edu-desc">Focusing on Data Structures, Algorithms, and Software Engineering
+                            principles. Active participant in coding cohorts</p>
                     </div>
                 </div>
             </div>
